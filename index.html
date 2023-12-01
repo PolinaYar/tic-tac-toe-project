@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+
+  <body>
+    <!-- Select Box -->
+    <div class="select-box">
+      <header class="select-box__header">Tic Tac Toe</header>
+      <div class="select-box__content">
+        <div class="select-box__title">Select which you want to be:</div>
+        <div class="select-box__options">
+          <button class="select-box__btn playerX">Player (X)</button>
+          <button class="select-box__btn playerO">Player (O)</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Playboard Section -->
+    <div class="play-board">
+      <div class="play-board__details">
+        <div class="play-board__players">
+          <span class="play-board__turn Xturn">X's Turn</span>
+          <span class="play-board__turn Oturn">O's Turn</span>
+          <div class="play-board__slider"></div>
+        </div>
+      </div>
+
+      <div class="play-area">
+        <section>
+          <span class="play-area__box box1"></span>
+          <span class="play-area__box box2"></span>
+          <span class="play-area__box box3"></span>
+        </section>
+        <section>
+          <span class="play-area__box box4"></span>
+          <span class="play-area__box box5"></span>
+          <span class="play-area__box box6"></span>
+        </section>
+        <section>
+          <span class="play-area__box box7"></span>
+          <span class="play-area__box box8"></span>
+          <span class="play-area__box box9"></span>
+        </section>
+      </div>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-box">
+      <div class="result-box__won-text"></div>
+      <div class="result-box__btn">
+        <button>Replay</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
